@@ -1,0 +1,57 @@
+1. <a href="https://www.google.com/">Google</a> is the best search engine in the world
+
+
+2. The purpose of a div tag is to contain elements such as paragraphs or images, lists, etc. The div acts as a container and you can target/style that specific container or div.
+
+
+
+3. <!DOCTYPE html>
+<html lang="en">
+<title></title>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+
+</body>
+
+</html>
+
+
+
+
+4. I would put a link to a stylesheet in the head of the html document
+
+
+5. I would put text, images, or DIV tags in the body of an html document
+
+6. <div class="graphicbox">
+  </div>
+
+  <div id="name">
+  </div>
+
+7. <div id="apples" class="fruit">
+  </div>
+
+
+8. .fruit {
+color: #000000;
+}
+
+
+9. We would use an image tag to include an image <img src=""
+
+
+10. We use media queries so that the images or media we use can be responsive to different devices like smartphones or tablets
+
+11. A serif font has lines at the end that lead to the other letter while a sans-serif font, like Helvetica, is more simple and clean
+
+
+12. #FFCC33 is a hexadecimal code

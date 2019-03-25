@@ -1,0 +1,42 @@
+h1 {
+  font-family: Times, serif;
+  font-size: 32px;
+}
+
+
+h2 {
+  font-family: Times, serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.banner {
+  margin: 0 auto;
+}
+
+#content {
+  margin: 0 auto;
+  display: block;
+}
+
+/*Make image responsive*/
+img {
+  display: block;
+margin: 0 auto;
+}
+
+#byline {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+}
+
+blockquote {
+  color: #B74E2B
+  border: 5px, solid, black;
+  font-size: 26px;
+  font-family: Century Gothic; 
+}
