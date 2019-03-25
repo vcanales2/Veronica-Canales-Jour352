@@ -1,9 +1,55 @@
-img {
-  width: 750px;
+
+@media screen and (max-width: 480px) {
+ /*Add CSS that only activates on screens less than 480x here*/
 
 }
 
-@media screen and (max-width: 970px) {
+
+@media screen and (max-width: 480px) {
+ p {
+   font-size:16px;
+ }
+}
 
 
+h1 {
+  font-size:1.5em;
+  font-family:sans-serif;
+}
+
+h2 {
+  font-size:1em;
+  font-family:sans-serif;
+}
+
+p {
+  font-family: 'Open Sans',sans-serif;
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: 20px;
+  align: center;
+  bottom: 0;
+  width: 80%;
+  background-color: #68757F;
+  color: white;
+  text-align: center;
+}
+
+
+.bg {
+  /* The image used */
+  background-image: url("images/banner.jpg");
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
 }
