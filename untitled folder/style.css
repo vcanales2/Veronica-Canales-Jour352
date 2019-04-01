@@ -1,0 +1,54 @@
+#container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.headline {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.byline {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+.chapter {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: left;
+  font-family: helvetica, arial, sans-serif;
+}
+
+p{
+  font-size: 1em;
+  font-family: georgia, times, serif;
+  line-height: 180%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.row {
+  text-align: center;
+  font-size: 1em;
+  font-family: georgia, times, serif;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: gray;
+}
