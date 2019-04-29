@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<meta name="description" content="Veronica Canales's Resume">
+<meta name="author" content="Veronica Canales">
+<title>Sexual Violence</title>
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Load c3.css -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.css" rel="stylesheet">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.14/c3.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <a class="navbar-brand" href="#">Veronica Canales</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#">Link</a>
+       </li>
+       <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </ul>
+
+   </div>
+  </nav>
+
+
+<div id="container">
+
+  <!-- first graphic container-->
+  <div class="graphic-container">
+    <h2>Location of Incidents for 2017-2018</h2>
+    <p>A majority of the incidents of the 91 formal complaints took place on campus. Virtual means through phone, social media, texting, etc.</p>
+     <div id="LocationChart"></div>
+    <em>Source: Data collected by The Office of Civil Rights and Sexual Misconduct</em>
+  </div>
+   <!-- END first graphic container-->
+
+<br></br>
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=16b8jSCsgqmQz8ldLcAJr7rMBmqhm3HqA3v5M41F9QRo&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+
+<br></br>
+
+<!-- second graphic container-->
+   <div class="graphic-container">
+   <h2>How many incidents reported by school year?</h2>
+   <p>The Office of Civil Rights and Sexual Misconduct at UMD receives reports of potential sexual misconduct, often by third parties. The number of reports has increased about 122 percent from 2014, when OCRSM was established.</p>
+    <div id="reportsbyschoolyears"></div>
+   <em>Source: Data collected by The Office of Civil Rights and Sexual Misconduct UMD</em>
+ </div>
+<!-- END second graphic container-->
+
+
+<br></br>
+
+
+
+<br></br>
+
+
+
+<footer>
+<p>Footer text</p>
+<p>Copyright 2019 Veronica Canales</p>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+<!-- c3 script-->
+  <script type="text/javascript">
+  //CHART 1
+  var chart3 = c3.generate({
+   bindto: '#LocationChart',
+   data: {
+     // iris data from R
+     columns: [
+       ['On Campus', 36.2],
+       ['Off Campus', 29.7],
+       ['Combination', 15.4],
+       ['Unknown', 12.1],
+       ['Virtual', 6.6],
+     ],
+     type : 'pie',
+     onclick: function (d, i) { console.log("onclick", d, i); },
+     onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+     onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+   },
+   color: {
+     pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895',]
+   }
+ });
+
+
+     var chart2 = c3.generate({
+      bindto: '#reportsbyschoolyears',
+      data: {
+        columns: [
+          ['2014-2015', 112],
+          ['2015-2016', 184],
+          ['2016-2017', 208],
+          ['2017-2018', 249],
+        ],
+        type: 'bar'
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+      }
+    });
+
+
+
+    var chart = c3.generate({
+      bindto: '#myLineChart',
+      data: {
+        x: 'x',
+        columns: [
+           ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+          ['Reported', 14, 4, 5, 1, 5, 3, 9, 9, 1, 5, 1, 3, 2, 32, 3, 6, 0, 2, 5, 21],
+        ]
+      },
+      color: {
+        pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+      }
+    });
+</script>
+
+
+</body>
+
+</html>
