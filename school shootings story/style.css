@@ -1,6 +1,29 @@
 #container {
   text-align: center;
   margin: 0 auto;
+  max-width: 1000px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #e0162b;
+}
+
+a:visited {
+  color: #999;
+}
+
+a:hover {
+  color: #0052a5;
+}
+
+.row {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  font-size: 1em;
+  font-family: georgia, times, serif;
 }
 
 .headline {
@@ -30,7 +53,7 @@ p{
   font-size: 1em;
   font-family:'PT Serif', serif;
   line-height: 180%;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   color: black
 
@@ -38,21 +61,13 @@ p{
 
 footer {
   background-color: black;
+  font-family: 'Montserrat';
   color: white;
   height: 100px;
   padding: 25px;
-}
-
-.footer-text {
-  font-family: 'Montserrat'
-  color: white;
-}
-
-.row {
   text-align: center;
-  font-size: 1em;
-  font-family: georgia, times, serif;
 }
+
 
 #image {
   display: block;
@@ -73,6 +88,8 @@ ul.navbar-nav {
 
 .navbar {
  font-family: 'Montserrat', sans-serif;
+ color: white;
+ font-size: 1.25em;
 
 }
 
@@ -80,12 +97,6 @@ body {
   font-family:'PT Serif', serif;
 }
 
-
-
-p{
- text-align:left;
- line-height:180%;
-}
 
 .red {
  color: #e0162b;
@@ -112,6 +123,7 @@ p{
 .hero-image {
   width: 100%;
   max-width: 900px;
+  align-content: center;
 }
 
 .intro {
@@ -123,7 +135,7 @@ p{
 }
 
 .stack-image {
-  width:100%;
+width:100%;
 max-width:900px;
 margin:0 auto;
 padding-top:30px;
