@@ -97,20 +97,21 @@ body {
   font-family:'PT Serif', serif;
 }
 
+blockquote {
+  font-size: 2.5em;
+  border: 13px dotted teal;
+}
 
 .red {
  color: #e0162b;
 }
 
-.blue {
- color: #0052a5;
+.teal {
+ color: #008080;
 }
 
-.star-blue {
-  width: 15px;
-}
 
-.star-red {
+.sexual-assault-ribbon {
   width: 15px;
 }
 
@@ -121,9 +122,10 @@ body {
 }
 
 .hero-image {
-  width: 100%;
+  width: 50%;
   max-width: 900px;
   align-content: center;
+  padding-top: 35px;
 }
 
 .intro {
